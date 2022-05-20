@@ -1,8 +1,26 @@
-<?php
+<?php 
 
+namespace App\Http\Controllers;
 
-public function mypage()
-    {
-        return view('contents/mypage');  
-    }
+use App\Content;
+use App\Http\Controllers;
+use Illuminate\Http\Request;
+
+class ContentController extends Controller
+{
+    
+  
+   public function login()
+   {
+       return view("contents/login");
+   }
+   
+   
+   public function mypage()
+   {
+       return view("contents/mypage");
+   }
+  
+    
+
 }
