@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+
 use App\User;
 use App\Http\Controllers;
 use Illuminate\Http\Request;
@@ -36,3 +37,6 @@ class ContentController extends Controller
       return view('contents/calendar');
    }
 }
+
+}
+
