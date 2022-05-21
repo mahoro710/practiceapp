@@ -16,7 +16,7 @@
                 <a class='record' href='/home/record'>今日の記録</a>
                 <a class='edit' href='/home/edit'>家事の追加</a>
                 <a class='point' href='/home/point'>ポイント記録</a>
-                <a class='calender' href='/home/calender'>カレンダー</a>
+                <a class='calendar' href='/home/calendar'>カレンダー</a>
                 
                 　
             </div>

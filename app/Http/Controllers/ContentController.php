@@ -1,20 +1,42 @@
-<?php
-
+<?php 
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Content;
-{
-public function mypage()
-    {
-        return view('contents/mypage');  
-    }
 
-    public function login(Content $content)
-    {
-        return view('contents/login')->with('content');
-}
+use App\User;
+use App\Http\Controllers;
+use Illuminate\Http\Request;
+
+class ContentController extends Controller
+{
+    
   
+   public function login()
+   {
+       return view("contents/login");
+   }
+   
+   
+   public function home()
+   {
+       return view("contents/home");
+   }
   
+   public function edit()
+   {
+      return view("contents/edit");
+   }
+   
+   public function point(User $user)
+   {
+      return view("contents/point")->with(['users' => $user->get]);
+   }
+
+   public function calendar()
+   {
+      return view('contents/calendar');
+   }
 }
+
+}
+

@@ -9,10 +9,17 @@
         <div class=login>
             
         <h1> HELLO </h1>
-        <P class='emailadress'>enter your email adress{{$content}}</P>
-        <p class='userid'>enter userid{{$content}}</p>
-        <p class='familypasscord'>enter family passcord{{$content}}</p>
+
+        <P class='emailadress'>enter your email adress</P>
+        <input type="email" id="emailadress" name="adress" required
+       minlength="4" maxlength="60" size="10">
+
+        <p class='userid'>enter userid</p>
+        <p class='familypasscord'>enter family passcord</p>
+        
+        <input type="submit" value="login"/>
         </div>
        
     </body>
+
 </html>
