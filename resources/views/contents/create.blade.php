@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+@extends('layouts.app')　　　　　　　　　　　　　　　　　　
+
+@section('content')
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -12,7 +15,7 @@
         
     <h1　class='title'>家事の追加</h1>
     
-    <form action="/home/index" method="POST">
+    <form action="/home" method="POST">
      @csrf
      
     <div class='housework'>
@@ -73,3 +76,4 @@
     
     </body>
 </html>
+@endsection

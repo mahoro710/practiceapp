@@ -19,6 +19,9 @@ class CreateHouseworkTable extends Migration
             $table->string('memo');
             $table->string('weekday');
             $table->string('time');
+            
+            
+          
         });
     }
 

@@ -8,18 +8,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
+
+ <h1 class="title">
+            {{ $housework->title }}
+        </h1>
+        <div class="content">
+            <div class="housework">
+                <h3>家事</h3>
+                <p>{{ $housework->memo }}</p>    
+            </div>
+        </div>
+        <div class="footer">
+            <a href="/home">戻る</a>
+
     </head>
-    
     <body>
-        <h1>これまでのポイント</h1>
-        @foreach ((array)$users as $user)
-        <h2 class='user'>{{$user->userid}}</h2>
-        <p class='point'>{{$user->point}}</p>
-    
-        
-        @endforeach
-        
-     <div class="back">[<a href="/home">back</a>]</div>
+  
     </body>
 </html>
 @endsection
