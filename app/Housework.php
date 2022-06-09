@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Housework extends Model
 {
   
+  protected $primaryKey = 'housework_id';
 
   protected $fillable = [
         'title',

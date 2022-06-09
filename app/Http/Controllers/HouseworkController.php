@@ -31,7 +31,7 @@ class HouseworkController extends Controller
    
   public function show(Housework $housework)
 {
-    return view('contents/show')->with(['houseworks' => $housework]);
+    return view('contents/show')->with(['housework' => $housework]);
 }
 
    public function calendar()
@@ -44,7 +44,7 @@ class HouseworkController extends Controller
 {
     $input = $request['housework'];
     $housework->fill($input)->save();
-    return redirect('/home/'. $housework->housework_id);
+    return redirect('/home/houseworks/'. $housework->housework_id);
 }
    
    public function index(Housework $housework)

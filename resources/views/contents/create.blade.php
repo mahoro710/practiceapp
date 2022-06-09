@@ -15,7 +15,7 @@
         
     <h1　class='title'>家事の追加</h1>
     
-    <form action="/home" method="POST">
+    <form action="/home/index" method="POST">
      @csrf
      
     <div class='housework'>
