@@ -19,3 +19,14 @@ Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
 
+<<<<<<< HEAD
+=======
+Route::get('/', 'ContentController@login');
+Route::get('/home','ContentController@home');
+Route::get('/home/edit','ContentController@edit');
+Route::get('/home/point','ContentController@point');
+Route::get('/home/calendar','ContentController@calendar');
+
+
+
+>>>>>>> e64f7ac633400f6d181b7db1a54526faa48b604a
