@@ -29,7 +29,7 @@ class HouseworkController extends Controller
       return view("contents/point")->with(['users' => $user-> get()]);
    }
    
-  public function show(Housework $housework)
+  public function show(Housework $housework )
 {
     return view('contents/show')->with(['housework' => $housework]);
 }
@@ -44,11 +44,18 @@ class HouseworkController extends Controller
 {
     $input = $request['housework'];
     $housework->fill($input)->save();
-    return redirect('/home/houseworks/'. $housework->housework_id);
+    return redirect('/home/'. $housework->housework_id);
 }
    
    public function index(Housework $housework)
    {
       return view("contents/index")->with(['houseworks'=> $housework-> get()]);;
    }
+   
+
+   public function delete(Housework $housework)
+{
+    $housework->delete();
+    return redirect('/home/');
+}
 }

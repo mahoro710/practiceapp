@@ -16,7 +16,7 @@
        <div class='houseworks'>
             @foreach ($houseworks as $housework)
                 <div class='housework'>
-                <h2 class='title'><a href="/home/houseworks/{{ $housework->housework_id }}">{{ $housework->title }}</a><h2>
+                <h2 class='title'><a href="/home/{{ $housework->housework_id }}">{{ $housework->title }}</a><h2>
                     <p class='memo'>{{ $housework->memo }}</p>
                     <p class="user">{{$housework->user_id}}</p>
                     <p>{{$housework->weekday}}</p>

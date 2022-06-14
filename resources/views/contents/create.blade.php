@@ -48,14 +48,14 @@
     <div class="time">
             <h2>時間帯を選択</h2>
             <select name='housework[time]'>
-　　　　　	<option value="月曜日">朝</option>
-　　　　	<option value="火曜日">昼</option>
-　　　　	<option value="水曜日">夕方</option>
-　　　　	<option value="木曜日">寝る前</option>
+　　　　　	<option value="朝">朝</option>
+　　　　	<option value="昼">昼</option>
+　　　　	<option value="夕方">夕方</option>
+　　　　	<option value="寝る前">寝る前</option>
             </select>
         </div>
         
-    </div>
+
     
     
     <div class="memo">
@@ -69,7 +69,7 @@
     </form>
     
      <div class="back">[<a href="/home">back</a>]</div>
-     </div>
+    
      
      
     
