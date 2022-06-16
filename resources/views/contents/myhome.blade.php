@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>家事分担</title>
         
     </head>
     
@@ -16,11 +16,11 @@
         <h1>ToDo</h1>
         <div class='contents'>
             <div class='content'>
-                <a class='record' href='/home/record'>今日の記録</a>
-                <a class='edit' href='/home/edit'>家事の追加</a>
+                
+                <p><a class='edit' href='/home/edit'>家事の追加</a></p>
         
-                <a class='calendar' href='/home/calendar'>カレンダー</a>
-             　 <a class='index' href='/home/index'>家事一覧</a>
+                <p><a class='calendar' href='/home/calendar'>カレンダー</a></p>
+             　 <p><a class='index' href='/home/index'>家事一覧</a></P>
              　 
             　  
                 　

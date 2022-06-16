@@ -50,7 +50,7 @@ function createProcess(year, month) {
         // 1colum単位で設定
         for (var j = 0; j < week.length; j++) {
             if (i == 0 && j < startDayOfWeek) {
-                // 1行目で1日まで先月の日付を設定
+                
                 calendar += "<td class='disabled'>" + (lastMonthEndDate - startDayOfWeek + j + 1) + "</td>";
             } else if (count >= endDate) {
                 // 最終行で最終日以降、翌月の日付を設定
@@ -71,4 +71,7 @@ function createProcess(year, month) {
         calendar += "</tr>";
     }
     return calendar;
-}
+　
+  　　  }
+　　　　　　
+  
